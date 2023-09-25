@@ -28,7 +28,7 @@ describe('Testes da Funcionalidade Usuários', () => {
           });
      });
 
-     it.only('2- Deve cadastrar um usuário com sucesso', () => {
+     it('2- Deve cadastrar um usuário com sucesso', () => {
           let nome = `Nome ${Math.floor(Math.random() * 10000000)}`
           let email = `email${Math.floor(Math.random() * 10000000) + '@email.com.br'}`
           cy.request({
@@ -48,7 +48,7 @@ describe('Testes da Funcionalidade Usuários', () => {
 
      });
 
-     it.only('3- Deve validar um usuário com email inválido', () => {
+     it('3- Deve validar um usuário com email inválido', () => {
           let nome = `Nome ${Math.floor(Math.random() * 10000000)}`
           cy.request({
                method: 'POST',
